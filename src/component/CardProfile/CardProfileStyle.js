@@ -9,7 +9,7 @@ export const Container = styled.section`
 	grid-column: 1;
 	grid-row: span 2;
 	background-color: var(--darkBlue);
-	border-radius: 15px;
+	border-radius: 10px;
 
 	@media screen and (max-width: 880px) {
 		grid-column: 1/4;
@@ -37,7 +37,7 @@ export const Profile = styled.div`
 	flex-direction: column;
 	padding: 1.25rem;
 	background-color: var(--blue);
-	border-radius: 0 0 15px 15px;
+	border-radius: 0 0 10px 10px;
 
 	@media screen and (max-width: 880px) {
 		flex-direction: row;
@@ -59,6 +59,11 @@ export const ProfileImg = styled.img`
 	}
 	@media screen and (max-width: 730px) {
 		max-width: 25%;
+	}
+	@media screen and (max-width: 375px) {
+		max-width: 35%;
+	
+		margin-right: 10px;
 	}
 `;
 

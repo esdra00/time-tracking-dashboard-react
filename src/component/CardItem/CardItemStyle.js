@@ -7,7 +7,7 @@ export const Card = styled.section`
 	background-position: top -5% right 10%;
 	background-repeat: no-repeat;
 	background-color: var(${(props) => props.bgColor});
-	border-radius: 15px;
+	border-radius: 10px;
 	overflow: hidden;
 	position: relative;
 	@media screen and (max-width: 500px) {
@@ -19,7 +19,7 @@ export const Container = styled.div`
 	height: 80%;
 	margin-top: 20%;
 	padding: 1.5rem;
-	border-radius: 15px 15px 0 0;
+	border-radius: 10px 10px 0 0;
 	background-color: var(--darkBlue);
 
 	&:hover {
@@ -56,6 +56,9 @@ export const ActivityStat = styled.div`
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-between;
+	}
+	@media screen and (max-width: 400px) {
+		flex-direction: column;
 	}
 `;
 export const CurrentStat = styled.span`
